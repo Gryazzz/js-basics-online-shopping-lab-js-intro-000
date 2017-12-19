@@ -59,14 +59,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var n = 0;
-  for (let n = 0; n < cart.length; n++) {
+  for (var n = 0; n < cart.length; n++) {
     if (cart[n].hasOwnProperty(item)) {
       cart.splice(n, 1);
       return cart;
     }
-  console.log ('That item is not in your cart.');
-  return cart;
+  return console.log ('That item is not in your cart.');
   }
 }
 
