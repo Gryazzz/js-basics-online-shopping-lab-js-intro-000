@@ -27,14 +27,14 @@ function viewCart() {
   } else if (cart.length === 2) {
       console.log(`${begin} ${(Object.keys(cart[0]))} at $${Object.values(cart[0])} and ${(Object.keys(cart[1]))} at $${Object.values(cart[1])}.`);
   } else {
-    
+
     for (let n = 0; n < cart.length; n++) {
       for (var items in cart[n]) {
       vcart.push(`${items} at $${cart[n][items]}`)
       }
-    } 
-     
-  vcart.pop();  
+    }
+
+  vcart.pop();
   console.log(`${begin} ${vcart.join(', ')}, and ${(Object.keys(cart[cart.length-1]))} at $${Object.values(cart[cart.length-1])}.`)
    }
 }
