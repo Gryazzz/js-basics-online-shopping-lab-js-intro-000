@@ -26,7 +26,7 @@ function viewCart() {
       vcart.push(`${items} at $${cart[n][items]}`)
       }
     }
-  console.log(`In your cart, you have ${vcart.join(', and ')}.`)
+  console.log(`In your cart, you have ${vcart.join(', ')}.`)
    }
 }
   /*if (l === 1) {
