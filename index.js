@@ -26,9 +26,9 @@ function viewCart() {
   } else if (l === 2) {
 
   } else if (l > 2) {
-    
+
   }
-  
+
 }
   /*if (!cart.length); {
     console.log ('Your shopping cart is empty.');
@@ -66,10 +66,10 @@ function removeFromCart(item) {
       return cart;
     }
   console.log ('That item is not in your cart.');
-  return cart;    
+  return cart;
 }
-  
-  
+
+
 
 function placeOrder(cardNumber) {
   // write your code here
