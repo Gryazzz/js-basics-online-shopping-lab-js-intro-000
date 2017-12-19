@@ -23,9 +23,12 @@ function viewCart() {
     console.log(`In your cart, you have ${(Object.keys(cart[0]))} at $${Object.values(cart[0])}.`);
   } else if (!cart.length) {
     console.log ('Your shopping cart is empty.');
-  } else if (l > 1) {
+  } else if (l === 2) {
 
+  } else if (l > 2) {
+    
   }
+  
 }
   /*if (!cart.length); {
     console.log ('Your shopping cart is empty.');
@@ -57,12 +60,16 @@ function total() {
 
 function removeFromCart(item) {
   var n = 0;
-  while (Object.keys(cart[n]).hasOwnProperty(item)) === 'true') {
-
-    delete cart[item];
-    return cart;
-  }
+  for (let n = 0; n < cart.length; n++) {
+    if (cart[n].hasOwnProperty(item)) {
+      cart.splice(n, 1);
+      return cart;
+    }
+  console.log ('That item is not in your cart.');
+  return cart;    
 }
+  
+  
 
 function placeOrder(cardNumber) {
   // write your code here
