@@ -17,34 +17,37 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var l = cart.length;
-  var n = 0;
-  if (l === 1) {
+  var vcart = [];
+  if (cart.length === 0) {
+    console.log('Your shopping cart is empty.');
+  } else {
+    for (let n = 0; n < cart.length; n++) {
+      for (var items in cart[n]) {
+      vcart.push(`${items} at $${cart[n][items]}`)
+      }
+    }
+  console.log(`In your cart, you have ${vcart.join(', and ')}.`)  
+   }
+}
+  /*if (l === 1) {
     console.log(`In your cart, you have ${(Object.keys(cart[0]))} at $${Object.values(cart[0])}.`);
   } else if (!cart.length) {
     console.log ('Your shopping cart is empty.');
   } else if (l === 2) {
     console.log (`In your cart, you have ${(Object.keys(cart[0]))} at $${Object.values(cart[0])} and ${(Object.keys(cart[1]))} at $${Object.values(cart[1])}.`)
   } else if (l > 2) {
+    
+  }*/
 
-  }
 
-}
-  /*if (!cart.length); {
-    console.log ('Your shopping cart is empty.');
-  }
+  /*
 
   var vcart = [];
   for (let n = 0; n < l; n++) {
      vcart.push(cart[n]);
 
    }
-  if (l = 0) {
-  var answer1 = (`In your cart, you have ${(Object.keys(cart[0]))} at $${Object.values(cart[0])}`);
-  console.log (answer1);
-  }
-  var answer2 = (`and ${(Object.keys(cart[n]))} at $${Object.values(cart[n])}`);
-return vcart;
+  
 }*/
 
 
