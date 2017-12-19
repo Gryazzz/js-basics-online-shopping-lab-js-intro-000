@@ -26,7 +26,7 @@ function viewCart() {
       vcart.push(`${items} at $${cart[n][items]}`)
       }
     }
-  console.log(`In your cart, you have ${vcart.join(', and ')}.`)  
+  console.log(`In your cart, you have ${vcart.join(', and ')}.`)
    }
 }
   /*if (l === 1) {
@@ -36,7 +36,7 @@ function viewCart() {
   } else if (l === 2) {
     console.log (`In your cart, you have ${(Object.keys(cart[0]))} at $${Object.values(cart[0])} and ${(Object.keys(cart[1]))} at $${Object.values(cart[1])}.`)
   } else if (l > 2) {
-    
+
   }*/
 
 
@@ -47,7 +47,7 @@ function viewCart() {
      vcart.push(cart[n]);
 
    }
-  
+
 }*/
 
 
