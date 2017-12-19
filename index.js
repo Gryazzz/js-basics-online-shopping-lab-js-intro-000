@@ -20,7 +20,7 @@ function viewCart() {
   var vcart = [];
   var begin = 'In your cart, you have';
 
-  if (cart.length === 0) {
+  if (!cart.length) {
     console.log('Your shopping cart is empty.');
   } else if (cart.length === 1) {
       console.log(`${begin} ${(Object.keys(cart[0]))} at $${Object.values(cart[0])}.`);
@@ -39,9 +39,6 @@ function viewCart() {
    }
 }
 
-
-
-
 function total() {
   var sum = 0;
   var n = 0;
@@ -51,6 +48,17 @@ function total() {
   }
   return sum;
 }
+
+/*function total() {
+  var sum = 0;
+  for (var n = 0; n < cart.length; n++) {
+    for (var items in cart[n]) {
+    sum += cart[n][items];
+    }
+  }
+  return sum;
+}
+*/
 
 function removeFromCart(item) {
   for (var n = 0; n < cart.length; n++) {
