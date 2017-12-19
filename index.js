@@ -24,7 +24,7 @@ function viewCart() {
     if (cart.length === 2) {
       console.log(`In your cart, you have${(Object.keys(cart[0]))} at $${Object.values(cart[0])} and ${(Object.keys(cart[1]))} at $${Object.values(cart[1])}.`);
       }
-    } else {
+    } else if {
     for (let n = 0; n < cart.length; n++) {
       for (var items in cart[n]) {
       vcart.push(`${items} at $${cart[n][items]}`)
